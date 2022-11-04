@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href=”./output.css” rel=”stylesheet”>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightBachround: "#f7f8fc",
+              secondaryBlack: "#07080C",
+              textGray: "#7d8090",
+              primaryBlue: "#015dFa",
+              navbarBorder: "#dfe0e8",
+              buttonBorder: "#b0b5be",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        @font-face {
+          font-family: Jeko-Extra-Bold;
+          src: url(/font/Jeko-Extra-Bold.ttf);
+        }
+        @font-face {
+          font-family: Jeko-Semi-Bold;
+          src: url(/font/Jeko-Semi-Bold.ttf);
+        }
+        @font-face {
+          font-family: Jeko-Bold;
+          src: url(/font/Jeko-Bold.ttf);
+        }
+        @font-face {
+          font-family: Jeko-Medium;
+          src: url(/font/Jeko-Medium.ttf);
+        }
+        .buttonShadow {
+          box-shadow: 0px 3.24119px 0px rgba(0, 0, 0, 0.05);
+        }
+        .content-auto {
+          content-visibility: auto;
+        }
+        .JekoExtraBold {
+          font-family: Jeko-Extra-Bold;
+        }
+        .JekoSemiBold {
+          font-family: Jeko-Semi-Bold;
+        }
+        .JekoBold {
+          font-family: Jeko-Bold;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body class="w-full">
+    <main class="bg-lightBachround w-full mx-auto overflow-hidden">
+      <div class="px-4 mx-auto">
+        <!-- --------------------------------NAVBAR---------------------------------------------------->
+        <div class="py-[10px] border-b border-navbarBorder">
+          <nav class="flex justify-between items-center">
+            <div>
+              <object
+                data="../photo/icon-logo-mobile.svg"
+                width="112"
+                height="22"
+              ></object>
+            </div>
+            <div class="flex items-center justify-between gap-4">
+              <div class="flex items-center">
+                <span
+                  class="py-[6px] px-[14px] text-xs font-normal text-primaryBlue"
+                  >Giriş yap</span
+                >
+
+                <button
+                  class="py-[6px] px-[14px] text-xs font-normal text-white bg-primaryBlue rounded-md"
+                >
+                  Kayıt ol
+                </button>
+              </div>
+
+              <div>
+                <object
+                  data="../photo/icon-hambur.svg"
+                  width="24"
+                  height="24"
+                ></object>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!----------------------------------NAVBAR---------------------------------------------------->
+        <!----------------------------------HERO---------------------------------------------------->
+        <div class="mt-4 mx-auto">
+          <div class="flex flex-col max-w-[270px]">
+            <span
+              class="text-5xl font-normal leading-[60px] tracking-[-0.02em] text-primaryBlue JekoExtraBold"
+              >Coinpara</span
+            >
+
+            <div
+              class="text-5xl font-normal leading-[60px] tracking-[-0.02em] JekoExtraBold"
+            >
+              <span> Her zaman </span>
+              <div class="flex items-center">
+                <span> Seninle </span>
+                <div
+                  class="bg-white buttonShadow rounded-full flex items-center justify-center ml-4"
+                >
+                  <div class="flex items-center px-4 py-[10px]">
+                    <object
+                      data="../photo/icon-heart-blue.svg"
+                      width="18"
+                      height="18"
+                    ></object>
+                    <object
+                      data="../photo/icon-heartSide.svg"
+                      width="18"
+                      height="18"
+                    ></object>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <span class="text-sm text-textGray mt-2 JekoSemiBold">
+              Bitcoin ve Diğer Kripto Paraları Kolayca Al-Sat ve Güvenle Sakla
+            </span>
+          </div>
+        </div>
+        <!----------------------------------HERO---------------------------------------------------->
+        <!----------------------------------HERO-BUTTON---------------------------------------------------->
+        <div class="grid grid-cols-2 gap-2 mt-4 JekoSemiBold">
+          <button
+            class="max-w-[175px] text-center py-4 bg-primaryBlue text-base tracking-[-0.004] text-white rounded-[10px] leading-6 whitespace-nowrap"
+          >
+            İşlem Yap
+          </button>
+          <button
+            class="max-w-[175px] text-center py-4 text-base tracking-[-0.004] text-[#0F1A30] border border-buttonBorder leading-6 rounded-[10px]"
+          >
+            Piyasalar
+          </button>
+        </div>
+        <!----------------------------------HERO-BUTTON---------------------------------------------------->
+        <!----------------------------------HERO-image---------------------------------------------------->
+        <div class="mt-8">
+          <img src="../photo/hero-image.svg" class="w-full" />
+        </div>
+        <!----------------------------------HERO-image---------------------------------------------------->
+      </div>
+      <!--------------------------------------- featurre cards ------------------------------------------ -->
+      <div class="flex gap-4">
+        <div class="bg-white min-w-[240px] rounded-[10px] ml-4">
+          <div class="p-4 flex">
+            <div>
+              <div class="flex flex-col">
+                <span
+                  class="JekoBold text-base text-black leading-5 tracking-[-0.01em]"
+                  >100 den fazla</span
+                >
+                <span
+                  class="JekoBold text-base text-primaryBlue leading-5 tracking-[-0.01em]"
+                  >kripto para</span
+                >
+              </div>
+              <span class="text-xs JekoSemiBold">
+                This is a content text about information
+              </span>
+            </div>
+            <object
+              data="../photo/icon-coins.svg"
+              width="60"
+              height="56"
+            ></object>
+          </div>
+        </div>
+        <div class="bg-white min-w-[240px] rounded-[10px]">
+          <div class="p-4 flex">
+            <div>
+              <div class="flex flex-col">
+                <span
+                  class="JekoBold text-base text-black leading-5 tracking-[-0.01em]"
+                  >100 den fazla</span
+                >
+                <span
+                  class="JekoBold text-base text-primaryBlue leading-5 tracking-[-0.01em]"
+                  >kripto para</span
+                >
+              </div>
+              <span class="text-xs JekoSemiBold">
+                This is a content text about information
+              </span>
+            </div>
+            <object
+              data="../photo/icon-coins.svg"
+              width="60"
+              height="56"
+            ></object>
+          </div>
+        </div>
+      </div>
+      <!--------------------------------------- featurre cards ------------------------------------------ -->
+      <!--------------------------------------- start to login  ------------------------------------------ -->
+      <div class="px-4 mx-auto">
+        <div class="flex flex-col mt-8">
+          <span
+            class="JekoExtraBold text-lg leading-[22px] tracking-[-.01em] text-secondaryBlack"
+          >
+            Kripto portofolyonu oluşturmaya hemen başla
+          </span>
+          <button
+            class="mt-4 max-w-[185px] text-center py-3 px-[24px] bg-primaryBlue text-base tracking-[-0.004] text-white rounded-[10px] leading-6"
+          >
+            Kazanmaya Başla
+          </button>
+        </div>
+      </div>
+      <!---------------------------------------start to login  ------------------------------------------ -->
+      <!---------------------------------------why coinpara  ------------------------------------------ -->
+      <div>
+        <div>
+          <span class="text-[40px] JekoExtraBold text-secondaryBlack"
+            >Neden</span
+          >
+          <span class="text-[40px] JekoExtraBold text-primaryBlue"
+            >Coinpara</span
+          >
+        </div>
+        <div>
+          <p class="">
+            Teknolojiyi takip ediyoruz sürekli gelişiyoruz tarzı kısa bir metin
+            Lörem ipsum pönesen såbegt såväl som suprasm jag prehet
+          </p>
+        </div>
+      </div>
+
+      <!---------------------------------------why coinpara  ------------------------------------------ -->
+    </main>
+  </body>
+</html>
